@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    background-color: blueviolet;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card{
+    width: 500px;
+    height: 700px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px 0;
+    border-radius: 20px;
+}
+
+.header{
+    width: 500px;
+    height: 300px;
+    background-color: blueviolet;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHpscjF1bmpjcjM5NWpza2J0dWoyczJldGF2bTRpa3g0MnV2NXoxeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKXEBR8m1jWso/giphy.gif");
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    border:4px solid white;
+    position: absolute;
+    left: 30%;
+    top: 200px;
+    animation: borderRgb 7s infinite;
+}
+
+.content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 120px;
+    color: blueviolet;
+}
+
+.description{
+    font-weight: 500;
+    width: 400px;
+}
+
+.btn{
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.btn:hover{
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
+
+@keyframes borderRgb{
+    0%{
+        border-color: blue;
+    }
+    10%{
+        border-color: gold;
+    }
+    20%{
+        border-color: red;
+    }
+    30%{
+        border-color: aqua;
+    }
+    40%{
+        border-color: hotpink;
+    }
+    50%{
+        border-color: mediumspringgreen;
+    }
+    60%{
+        border-color: orangered;
+    }
+    70%{
+        border-color: springgreen;
+    }
+    80%{
+        border-color: brown;
+    }
+    90%{
+        border-color: chartreuse;
+    }
+    100%{
+        border-color: darkmagenta;
+    }
+}
